@@ -13,6 +13,7 @@ use Laravel\Scout\Console\ImportCommand;
 use Illuminate\Console\Scheduling\Schedule;
 use Pvtl\VoyagerFrontend\Exceptions\Handler;
 use Illuminate\Contracts\Debug\ExceptionHandler;
+use Illuminate\Support\Facades\Auth;
 use Pvtl\VoyagerFrontend\FormFields\FrontendLayout;
 use Pvtl\VoyagerFrontend\Http\Controllers\PageController;
 
@@ -102,7 +103,7 @@ class VoyagerFrontendServiceProvider extends ServiceProvider
     {
         // Provide user data to all views
         View::composer('*', function ($view) use ($request) {
-            $view->with('currentUser', \Auth::user());
+            $view->with('currentUser', Auth::user());
             $view->with('breadcrumbs', PageController::getBreadcrumbs($request));
         });
 
