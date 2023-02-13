@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "df2aade1ea68f978b5e21fec11263f9e",
+    "content-hash": "4e65e30b2afa1f55146b705961417351",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -8258,8 +8258,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "code23/voyager-pages": 20,
-        "code23/voyager-blog": 20
+        "code23/voyager-blog": 20,
+        "code23/voyager-pages": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

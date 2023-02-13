@@ -16,8 +16,8 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "code23/voyager-pages": "dev-master",
         "code23/voyager-blog": "dev-master",
+        "code23/voyager-pages": "dev-master",
         "tcg/voyager": "^1.6",
         "spatie/laravel-sitemap": "*",
         "teamtnt/laravel-scout-tntsearch-driver": "^12.0",
@@ -49,11 +49,11 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/code23/voyager-pages"
+            "url": "https://github.com/code23/voyager-blog"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/code23/voyager-blog"
+            "url": "https://github.com/code23/voyager-pages"
         }
     ],
     "scripts": {
