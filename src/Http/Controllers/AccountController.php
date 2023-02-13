@@ -2,11 +2,11 @@
 
 namespace Pvtl\VoyagerFrontend\Http\Controllers;
 
-use Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Support\Facades\Auth;
 
 class AccountController extends BaseController
 {

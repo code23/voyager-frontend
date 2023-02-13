@@ -1,7 +1,9 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Pvtl\VoyagerFrontend\Page;
 use Illuminate\Support\Facades\Request;
+use Illuminate\Support\Facades\Route;
 
 $accountController = '\Pvtl\VoyagerFrontend\Http\Controllers\AccountController';
 $searchController = '\Pvtl\VoyagerFrontend\Http\Controllers\SearchController';
