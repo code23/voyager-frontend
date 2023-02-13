@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4e65e30b2afa1f55146b705961417351",
+    "content-hash": "5a979923db2593fabc79b869bf742548",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -130,7 +130,7 @@
         },
         {
             "name": "code23/voyager-blog",
-            "version": "dev-master",
+            "version": "v0.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/code23/voyager-blog.git",
@@ -149,7 +149,6 @@
             "require-dev": {
                 "phpunit/phpunit": "^8.5"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -194,13 +193,13 @@
                 "voyager"
             ],
             "support": {
-                "source": "https://github.com/code23/voyager-blog/tree/master"
+                "source": "https://github.com/code23/voyager-blog/tree/v0.9.0"
             },
             "time": "2023-02-13T09:42:11+00:00"
         },
         {
             "name": "code23/voyager-pages",
-            "version": "dev-master",
+            "version": "v0.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/code23/voyager-pages.git",
@@ -218,7 +217,6 @@
             "require-dev": {
                 "phpunit/phpunit": "*"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -265,7 +263,7 @@
                 "voyager"
             ],
             "support": {
-                "source": "https://github.com/code23/voyager-pages/tree/master"
+                "source": "https://github.com/code23/voyager-pages/tree/v0.9.0"
             },
             "time": "2023-02-13T09:45:41+00:00"
         },
@@ -8257,10 +8255,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "code23/voyager-blog": 20,
-        "code23/voyager-pages": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
