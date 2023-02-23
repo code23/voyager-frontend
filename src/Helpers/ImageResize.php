@@ -1,10 +1,15 @@
 <?php
 
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\ImageManagerStatic as Image;
 
 function imageUrl($imagePath = '', $width = null, $height = null, $config = array())
 {
+    if (! $imagePath || empty($imagePath)) {
+        return null;
+    }
+
     // Available configs
     $quality = isset($config['quality']) ? $config['quality'] : 100;
     $crop = isset($config['crop']) ? !!($config['crop']) : true;
@@ -20,7 +25,7 @@ function imageUrl($imagePath = '', $width = null, $height = null, $config = arra
     // - You can add ASSET_URL=http://... to your .env to reference images through a CDN
     $hostname = config('app.asset_url', config('app.url'));
     $urlPrefix = $hostname . '/storage/';
-    $diskPath = str_replace($urlPrefix, '', $cachedUrl);
+    $diskPath = str_replace($urlPrefix, '', $cachedUrl ?? '');
 
     if (null === $cachedUrl || !Storage::exists($diskPath)) {
 

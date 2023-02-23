@@ -13,7 +13,7 @@ $searchController = '\Pvtl\VoyagerFrontend\Http\Controllers\SearchController';
  */
 Route::group(['middleware' => ['web']], function () use ($accountController) {
     Route::group(['namespace' => 'App\Http\Controllers'], function () {
-        Auth::routes();
+        // Auth::routes();
     });
 
     Route::group(['middleware' => 'auth', 'as' => 'voyager-frontend.account'], function () use ($accountController) {
