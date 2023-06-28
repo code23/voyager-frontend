@@ -158,7 +158,11 @@ class VoyagerFrontendServiceProvider extends ServiceProvider
             $schedule = $this->app->make(Schedule::class);
 
             $schedule->command('voyager-frontend:clean-thumbnails')->dailyAt('13:00');
-            $schedule->command('voyager-frontend:generate-sitemap')->dailyAt('13:15');
+
+            if (config('voyager-frontend.sitemap.schedule', true)) {
+                $schedule->command('voyager-frontend:generate-sitemap')->dailyAt('13:15');
+            }
+
             $schedule->command('voyager-frontend:generate-search-indices')->dailyAt('13:30');
         });
     }
